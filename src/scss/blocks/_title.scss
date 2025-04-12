@@ -1,0 +1,48 @@
+.h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 0.981rem + 2.31vw, 3.75rem);
+    line-height: 120%;
+    color: var(--primary-black);
+
+    margin-bottom: 14px;
+}
+
+.h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.077rem + 0.77vw, 2rem);
+    line-height: 120%;
+    color: var(--primary-black);
+}
+
+.h3{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--primary-pink);
+}
+
+.text-main{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-black);
+}
+
+
+.margin-title-h1{
+    margin-bottom: 14px;
+}
+.margin-title-h2{
+    margin-bottom: 40px;
+}
+
+.title-color{
+    color: var(--secondary-green);
+}
+
+
+

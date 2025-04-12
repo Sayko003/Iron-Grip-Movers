@@ -1,0 +1,23 @@
+:root {
+	--container-width: 1450px;
+	--container-padding: 15px;
+
+	--font-main: "Montserrat", sans-serif;
+	--font-accent: "Brygada 1918", sans-serif;
+	--font-titles: var(--font-main);
+
+	--primary-black: #13201e;
+	--primary-pink: #d34f82;
+	--primary-white: #fffdfe;
+	--secondary-green: #13a152;
+	--secondary-gray: #7e7676;
+	--outline-gray: #c0bcbc;
+
+	--page-bg: #fff;
+
+    --laptop-size: 1400px;
+	--tablet-md-size: 960px;
+	--tablet-sm-size: 768px;
+	--mobile-md-size: 480px;
+	--mobile-sm-size: 360px;
+}
