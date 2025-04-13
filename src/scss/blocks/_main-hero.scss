@@ -53,3 +53,120 @@
     margin-top: 35px;
     width: 100%;
 }
+
+@media only screen and (max-width: 1400px){
+    .hero--text{
+        max-width: 804px;
+    }
+}
+@media only screen and (max-width: 1246px){
+    .hero{
+        padding: 70px 0 40px 0;
+    }
+    .hero--wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero--text{
+        max-width: 898px;
+        margin-bottom: 40px;
+    }
+    .hero--text-descr{
+        max-width: 100%;
+    }
+    .hero--form{
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .hero--form--title{
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+    }
+    .hero--form--inputs{
+        flex-direction: row;
+        column-gap: 8px;
+    }
+    .hero--form--label{
+        text-align: left;
+    }
+    .hero--form--input{
+        max-width: 244px;
+    }
+    .hero--form--btn{
+        margin-top: 0;
+        max-width: 130px;
+        align-self: flex-end;
+    }
+}
+@media only screen and (max-width: 1010px){
+    .hero--form--input{
+        max-width: 235px;
+    }
+    .hero--form--title{
+        font-size: 24px;
+    }
+    .hero--form--btn{
+        max-width: 88px;
+    }
+}
+@media only screen and (max-width: 950px){
+    .hero--form--input{
+        max-width: 176px;
+    }
+    .hero--form--btn{
+        max-width: 176px;
+    }
+}
+@media only screen and (max-width: 875px){
+    .hero--form--btn{
+        max-width: 88px;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .hero{
+        padding: 70px 0 350px 0;
+        background-size: cover;
+    }
+    .hero--form--title{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .hero--form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .hero--form--inputs{
+        flex-direction: column;
+    }
+    .hero--form--input{
+        max-width: 100%;
+    }
+    .hero--form--btn{
+        max-width: 100%;
+        margin-top: 24px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .hero{
+        padding: 40px 0 234px 0;
+    }
+    .hero--text,.hero--form--title{
+        margin-bottom: 24px;
+    }
+    .hero--form{
+        padding: 24px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .hero{
+        padding: 40px 0 150px 0;
+    }
+}

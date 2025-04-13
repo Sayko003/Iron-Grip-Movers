@@ -73,7 +73,7 @@
     color: var(--primary-white);
     transition: all 0.2s ease-in;
     &:hover{
-        font-weight: 600;
+        text-shadow: 0 0 1px var(--secondary-green), 0 0 1px var(--secondary-green);
         color: var(--secondary-green);
     }
 }
@@ -121,5 +121,89 @@
     transition: color 0.2s ease-in;
     &:hover{
         color: var(--secondary-green);
+    }
+}
+@media only screen and (max-width: 1400px){
+    .footer--descr{
+        max-width: 268px;
+    }
+}
+@media only screen and (max-width: 1246px){
+    .footer--nav{
+        max-width: 135px;
+    }
+    .footer--list{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1010px){
+    .footer--locations{
+        flex-direction: column;
+    }
+    .footer--email--link {
+        &:hover{
+            color: var(--primary-white);
+        }
+    }
+    .footer--location--tel {
+        &:hover{
+            color: var(--primary-white);
+        }
+    }
+    .footer--link {
+        &:hover{
+            font-weight: 400;
+            color: var(--primary-white);
+        }
+    }
+}
+@media only screen and (max-width: 700px){
+    .footer--wrapper{
+        flex-wrap: wrap;
+    }
+    .footer--descr{
+        order:3;
+        margin: 14px auto 0 auto;
+    }
+    .footer--block-location{
+        left:66%;
+    }
+}
+@media only screen and (max-width: 479px){
+    .footer{
+        padding: 40px 0;
+    }
+    .footer--descr{
+        margin: 14px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .footer--nav{
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+    .footer--list{
+        align-items: center;
+        row-gap: 20px;
+    }
+    .footer--contact{
+        margin: 0 auto;
+    }
+    .footer--email{
+        text-align: center;
+    }
+    .footer--locations{
+        flex-direction: row;
+        max-width: 277px;
+    }
+    .footer--descr{
+        margin: 24px auto 0 auto;
+        text-align: center;
+    }
+    .footer--block-location{
+        left:50%;
     }
 }

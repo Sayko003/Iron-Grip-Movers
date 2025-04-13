@@ -12,10 +12,57 @@
 	--secondary-green: #13a152;
 	--secondary-gray: #7e7676;
 	--outline-gray: #c0bcbc;
+	
+	--overlay-pink: rgba(194, 110, 183, 0.2);
 
     --laptop-size: 1400px;
-	--tablet-md-size: 960px;
+	--tablet-md-size: 1010px;
 	--tablet-sm-size: 768px;
 	--mobile-md-size: 480px;
 	--mobile-sm-size: 360px;
 }
+@media only screen and (max-width: 1400px) {
+    :root{
+        --container-width: 1246px;
+	    --container-padding: 15px;
+    }
+}
+@media only screen and (max-width: 1246px){
+	:root{
+		--container-width: 1040px;
+	    --container-padding: 15px;
+	}
+}
+@media only screen and (max-width: 1010px){
+	:root{
+        --container-width: 100%;
+	    --container-padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+	:root{
+        --container-width: 100%;
+	    --container-padding: 12px;
+    }
+}
+
+// @media only screen and (max-width: 1400px){
+
+// }
+// @media only screen and (max-width: 1246px){
+    
+// }
+// @media only screen and (max-width: 1010px){
+
+// }
+// @media only screen and (max-width: 768px){
+
+// }
+// @media only screen and (max-width: 480px){
+
+// }
+
+// @media only screen and (max-width: 360px){
+
+// }

@@ -1,7 +1,7 @@
 .h1 {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: clamp(1.5rem, 0.981rem + 2.31vw, 3.75rem);
+    font-size: 60px;
     line-height: 120%;
     color: var(--primary-black);
 
@@ -11,7 +11,7 @@
 .h2{
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: clamp(1.25rem, 1.077rem + 0.77vw, 2rem);
+    font-size: 32px;
     line-height: 120%;
     color: var(--primary-black);
 
@@ -59,6 +59,32 @@
     color: var(--secondary-green);
 }
 
+@media only screen and (max-width: 768px){
+    .h1{
+        font-size: 32px;
+    }
+    .h2{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .h1{
+        font-size: 24px;
+    }
+    .h2{
+        font-size: 20px;
+    }
+    .h3{
+        font-size: 17px;
+    }
+    .text-main{
+        font-size: 15px;
+    }
+}
+
+// @media only screen and (max-width: 360px){
+
+// }
 
 
 

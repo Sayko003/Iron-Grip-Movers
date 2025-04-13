@@ -30,6 +30,8 @@
     row-gap: 20px;
     max-width: 684px;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 .choose--top {
     display: flex;
@@ -62,3 +64,81 @@
     height: 47px;
     background: url('../../img/svgicons-nosprite/choose/choose-money.svg') center center /contain no-repeat;
 }
+
+@media only screen and (max-width: 1400px){
+    .choose--wrapper{
+        justify-content: flex-start;
+        column-gap:40px;
+    }
+    .choose--list{
+        max-width: 456px;
+    }
+    .choose--img{
+        max-width: 598px;
+    }
+}
+@media only screen and (max-width: 1246px){
+    .choose--wrapper{
+        flex-direction: column;
+        row-gap: 14px;
+    }
+    .choose--list{
+        order:1;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .choose--item{
+        max-width: 292px;
+    }
+    .choose--img{
+        order:2;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1010px){
+    .choose--img{
+        max-width: 433px;
+    }
+    .choose--top{
+        column-gap: 4px;
+        margin-bottom: 11px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .choose--list{
+        flex-wrap: wrap;
+    }
+    .choose--item{
+        max-width: 229px;
+    }
+    .choose--top{
+        min-height: 84px;
+    }
+    .choose .h3{
+        max-width: 147px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .choose{
+        padding: 40px 0;
+    }
+    .choose .h2{
+        margin-bottom: 24px;
+    }
+    .choose--item, .choose .h3{
+        max-width: 100%;
+    }
+    .choose--top{
+        min-height: 0;
+        margin-bottom: 4px;
+    }
+    .choose--img::before{
+        width: 200%;
+        height: 200%;
+    }
+}
+
+// @media only screen and (max-width: 360px){
+
+// }

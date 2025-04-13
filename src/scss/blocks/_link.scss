@@ -8,6 +8,7 @@
     transition: color 0.2s ease-in;
     &:hover{
         color: var(--secondary-green);
+        text-shadow: 0 0 0.6px var(--secondary-green), 0 0 0.6px var(--secondary-green);
         .icon--header-arrow-down {
             path{
                 stroke: var(--secondary-green);
@@ -17,7 +18,7 @@
 }
 .nav--link-active{
     color: var(--secondary-green);
-    font-weight: 600;
+    text-shadow: 0 0 0.6px var(--secondary-green), 0 0 0.6px var(--secondary-green);
     .icon--header-arrow-down {
         path{
             stroke: var(--secondary-green);
@@ -56,3 +57,4 @@
 .footer--location-link-active{
     color: var(--secondary-green);
 }
+

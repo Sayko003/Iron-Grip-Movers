@@ -3,12 +3,10 @@ const headerLocation = () =>{
         blockHeader = document.querySelector('.header--block-location'),
         btnLinkFooter = document.querySelector('.footer-btn--location'),
         blockFooter = document.querySelector('.footer--block-location'),
-        body = document.querySelector('body');
+        body = document.querySelector('body'),
+        btnMobLink = document.querySelector('.header--mob--selects'),
+        blockMob = document.querySelector('.header--mob--select');
 
-    // btnLink.addEventListener(`click`, (e) =>{
-    //     block.classList.toggle('header--block-location-active')
-       
-    // })
     function showLocation(btn,block,activeClass){
         btn.addEventListener(`click`, (e) =>{
             e.preventDefault();
@@ -16,9 +14,16 @@ const headerLocation = () =>{
             block.classList.toggle(activeClass);
         })
     }
-
-    showLocation(btnLinkHeader,blockHeader, `header--block-location-active`);
-    showLocation(btnLinkFooter,blockFooter, `footer--block-location-active`);
+    
+    if(window.innerWidth > 1010){
+        showLocation(btnLinkHeader,blockHeader, `header--block-location-active`);
+        showLocation(btnLinkFooter,blockFooter, `footer--block-location-active`);
+    }
+    if(window.innerWidth <= 1010){
+        showLocation(btnMobLink,blockMob, `header--mob--select-active`);
+        showLocation(btnLinkFooter,blockFooter, `footer--block-location-active`);
+    }
+    
 }
 
 export default headerLocation;
