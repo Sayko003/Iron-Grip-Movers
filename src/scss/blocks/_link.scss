@@ -40,3 +40,19 @@
 .header--location-link-active{
     color: var(--secondary-green);
 }
+
+.footer--location-link{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-white);
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--secondary-green);
+    }
+}
+
+.footer--location-link-active{
+    color: var(--secondary-green);
+}

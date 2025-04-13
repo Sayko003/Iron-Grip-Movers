@@ -1,0 +1,125 @@
+.footer {
+    background: var(--primary-black);
+    padding: 70px 0;
+}
+.footer--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+.footer--descr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.footer--logo {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--secondary-green);
+}
+.footer--copy {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--secondary-gray);
+}
+.footer--nav{
+    max-width: 604px;
+    width: 100%;
+    position: relative;
+}
+.footer--block-location{
+    display: none;
+    flex-direction: column;
+    row-gap: 6px;
+
+    width: 182px;
+    padding: 24px 32px 32px 32px;
+    border: 1px solid var(--outline-gray);
+    border-radius: 8px;
+    background: var(--primary-black);
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,15%);
+    z-index: -5;
+    opacity: 0;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer--block-location-active{
+    display: flex;
+    z-index: 1;
+    opacity: 1;
+}
+
+.footer--list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 14px;
+}
+
+.footer--link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-white);
+    transition: all 0.2s ease-in;
+    &:hover{
+        font-weight: 600;
+        color: var(--secondary-green);
+    }
+}
+.footer--contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.footer--locations {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.footer--location {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.footer--location--name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--secondary-gray);
+}
+.footer--location--tel {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-white);
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--secondary-green);
+    }
+}
+
+.footer--email--link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-white);
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--secondary-green);
+    }
+}
