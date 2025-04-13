@@ -1,0 +1,16 @@
+
+.service--hero {
+    padding: 125px 0;
+    background-image: url('../img/page/service/service-hero-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary-white);
+}
+.service--hero--wrapper{
+    justify-content: flex-start;
+    column-gap:59px;
+}
+.service--hero--img {
+    max-width: 490px;
+}

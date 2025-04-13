@@ -9,9 +9,9 @@
     align-items:flex-start;
 }
 .choose--img {
-    // background: url('../../img/page/main/main-choose-bg.png') center center /cover no-repeat;
     max-width: 696px;
     position: relative;
+    z-index: 1;
     &::before{
         content: '';
         position: absolute;
@@ -21,7 +21,7 @@
         background: url('../../img/page/main/main-choose-bg.png') center center /contain no-repeat;
         width: 950px;
         height: 624px;
-        z-index: 0;
+        z-index: -1;
     }
 }
 .choose--list {

@@ -1,0 +1,37 @@
+.why {
+    padding: 130px 0;
+    background: url('../../img/page/service/service-why-bg.png') center center /cover no-repeat;
+}
+.why--title {
+    max-width: 580px;
+}
+.why--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    margin-bottom: 24px;
+}
+.why--list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.why--item {
+    padding-left: 15px;
+    max-width: 445px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top:7px;
+        left:0;
+        border-radius: 50px;
+        width: 7px;
+        height: 7px;
+        background: var(--secondary-green);
+    }
+}
+.why--descr{
+    max-width: 997px;
+}

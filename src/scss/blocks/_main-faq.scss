@@ -14,6 +14,8 @@
 }
 .faq--accardion--wrapper{
     margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
 }
 .faq--block {
     border: 1px solid var(--outline-gray);
@@ -71,6 +73,7 @@
 .faq--img {
     max-width: 696px;
     position: relative;
+    z-index: 1;
     &::before{
         content: url('../../img/page/main/main-faq-bg.png');
         width: 100%;
@@ -78,5 +81,6 @@
         position: absolute;
         top: -50%;
         left: -30%;
+        z-index: -1;
     }
 }

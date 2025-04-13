@@ -1,11 +1,12 @@
 const accardion = function(){
 
     const blockTitle = document.querySelectorAll(`.faq--block`),
-        blockContent = document.querySelectorAll(`.faq--content`);
+        blockContent = document.querySelectorAll(`.faq--content`),
+        blockWrapper = document.querySelectorAll(`.faq--accardion--wrapper`);
 
     
-    function toggleContent(block, content){
-        block.addEventListener(`click`, (e) =>{
+    function toggleContent(block, content, wrapper){
+        wrapper.addEventListener(`click`, (e) =>{
             e.preventDefault();
 
             block.classList.toggle(`faq--block-active`);
@@ -13,14 +14,14 @@ const accardion = function(){
         });
     }
 
-    function arrayEvent(block, content){
-        block.forEach((item,i) =>{
-            toggleContent(item, content[i]);
+    function arrayEvent(block, content, wrapper){
+        wrapper.forEach((item,i) =>{
+            toggleContent(block[i], content[i], item);
         });
     }
 
-    arrayEvent(blockTitle, blockContent);
-    blockTitle[2].click();
+    arrayEvent(blockTitle, blockContent,blockWrapper);
+    blockWrapper[2].click();
 }
 
 export default accardion;

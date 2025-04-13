@@ -57,6 +57,7 @@
 .about--img {
     max-width: 680px;
     position: relative;
+    z-index: 1;
     &::before{
         content: '';
         position: absolute;
@@ -66,6 +67,6 @@
         background: url('../../img/page/main/main-about-bg.png') center center /contain no-repeat;
         width: 957px;
         height: 688px;
-        z-index: 0;
+        z-index: -1;
     }
 }
