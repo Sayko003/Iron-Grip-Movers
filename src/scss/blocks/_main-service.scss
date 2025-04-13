@@ -1,0 +1,109 @@
+.service {
+    padding: 130px 0 125px 0;
+    background: url('../../img/page/main/main-service-bg.png') center center /cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: url('../../img/page/main/main-service-before.png');
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+.service--cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.service--card {
+    max-width: 268px;
+}
+
+.service--title {
+    margin-bottom: 4px;
+    min-height: 56px;
+}
+.service--descr {
+    margin-bottom: 24px;
+}
+
+.service--select {
+    padding: 32px 0 32px 32px;
+    margin-top: 70px;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid var(--outline-gray);
+    border-radius: 8px;
+    background: var(--primary-white);
+
+    position: relative;
+    &::before{
+        content: url('../../img/page/main/main-service-img.png');
+        max-width: 908px;
+        height: 256px;
+        width: 100%;
+        position: absolute;
+        bottom: 32px;
+        right: 32px;;
+    }
+    
+}
+.service--select--location {
+    border: 1px solid var(--outline-gray);
+    border-radius: 8px;
+    padding: 32px;
+    max-width: 338px;
+    width: 100%;
+}
+.service--select--title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--primary-pink);
+
+    margin-bottom: 24px;
+}
+.service--select--scroll {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    overflow-y: scroll;
+    max-height: 56px;
+    position: relative;
+    z-index: 2;
+    // scrollbar-width: thin;
+    // scrollbar-color: var(--outline-gray) var(--primary-white);
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--primary-white);
+        border: 1px solid var(--outline-gray);
+        border-radius:200px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--outline-gray);   
+        border-radius: 200px;       
+        border: 1px solid var(--outline-gray); 
+    }
+}
+.service--location-link{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-black);
+}
+.service--location-link-active{
+    font-weight: 600;
+    color: var(--secondary-green);
+}
+
+

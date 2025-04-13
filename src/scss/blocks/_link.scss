@@ -1,0 +1,42 @@
+.nav--link{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-black);
+
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--secondary-green);
+        .icon--header-arrow-down {
+            path{
+                stroke: var(--secondary-green);
+            }      
+        }
+    }
+}
+.nav--link-active{
+    color: var(--secondary-green);
+    font-weight: 600;
+    .icon--header-arrow-down {
+        path{
+            stroke: var(--secondary-green);
+        }      
+    }
+}
+
+.header--location-link{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-black);
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--secondary-green);
+    }
+}
+
+.header--location-link-active{
+    color: var(--secondary-green);
+}

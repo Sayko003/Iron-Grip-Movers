@@ -1,13 +1,14 @@
-
+*{
+	box-sizing: border-box;
+}
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--page-bg);
+	background-color: var(--primary-white);
 	color: var(--primary-black);
 	font-family: var(--font-main);
-	text-wrap: balance;
 }
 
 img {
@@ -18,7 +19,6 @@ img {
 
 a {
 	display: block;
-	color: var(--secondary-green);
 }
 
 code {

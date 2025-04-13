@@ -4,3 +4,22 @@
 	width: 70px;
 	height: 70px;
 }
+.icon--header-arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+	transition: all 0.2s ease-in;   
+}
+.icon-input{
+	fill: transparent;
+	stroke-width: 1px;
+	stroke: var(--secondary-gray);
+
+	position: absolute;
+	z-index: 1;
+	bottom: 15px;
+	left:25px;
+
+	width: 24px;
+	height: 24px;
+}

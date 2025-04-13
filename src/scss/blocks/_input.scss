@@ -1,0 +1,43 @@
+.hero--form--label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--primary-black);
+    padding-left: 24px;
+    cursor: default;
+}
+.hero--form--input {
+    border: 1px solid var(--outline-gray);
+    border-radius: 8px;
+    padding: 12px 24px 14px 24px;
+    background: var(--primary-white);
+    width: 100%;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--secondary-gray);
+
+    position: relative;
+    padding-left: 56px;
+
+    transition: all 0.2s ease-in;
+    // &:hover{
+    //     border: 1px solid var(--primary-pink);
+    // }
+    &:focus{
+        border: 1px solid var(--primary-pink);
+        color: var(--primary-pink);
+    }
+    &:valid{
+        border: 1px solid var(--secondary-green);
+        color: var(--primary-black);
+    }
+    &:disabled{
+        border: 1px solid var(--outline-gray);
+        color: var(--primary-black);
+    }
+    
+}
