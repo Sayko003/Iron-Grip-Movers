@@ -16,6 +16,34 @@ const slider = function (){
         nextEl: '.feedback--arrow-next',
         prevEl: '.feedback--arrow-prev',
     },
+    breakpoints: {
+    
+        // 320: {
+        // slidesPerView: 2,
+        // spaceBetween: 20
+        // },
+        
+        // 480: {
+        // slidesPerView: 3,
+        // spaceBetween: 30
+        // },
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+        },
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        960: {
+        slidesPerView: 3,
+        spaceBetween: 20
+        },
+        1251: {
+        slidesPerView: 4,
+        spaceBetween: 20
+        }
+    }
     });
 }
 

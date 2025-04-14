@@ -1,10 +1,11 @@
 .hero{
     padding: 150px 0 385px 0;
-    background-image: url('../../img/page/main/main-hero-bg-xxl.png');
+    background-image: url('../../img/page/main/main-hero-bg-xl.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--primary-white);
+    position: relative;
 }
 .hero--wrapper {
     display: flex;
@@ -13,8 +14,6 @@
 .hero--text {
     max-width: 820px;
 }
-
-
 .hero--text-descr {
     max-width: 691px;
 }
@@ -53,16 +52,19 @@
     margin-top: 35px;
     width: 100%;
 }
-
+.hero--img--bg{
+    position: absolute;
+    bottom: 66px;
+}
 @media only screen and (max-width: 1400px){
+    .hero{
+        background-image: url('../../img/page/main/main-hero-bg-md.png');
+    }
     .hero--text{
         max-width: 804px;
     }
 }
 @media only screen and (max-width: 1246px){
-    .hero{
-        padding: 70px 0 40px 0;
-    }
     .hero--wrapper{
         flex-direction: column;
         justify-content: center;
@@ -103,7 +105,14 @@
         align-self: flex-end;
     }
 }
-@media only screen and (max-width: 1010px){
+@media only screen and (max-width: 1040px){
+    .hero{
+        padding: 70px 0 370px 0;
+        background-image: url('../../img/page/main/main-hero-bg-mdmin.png');
+    }
+    .hero--img--bg{
+        bottom: 40px;
+    }
     .hero--form--input{
         max-width: 235px;
     }
@@ -114,30 +123,23 @@
         max-width: 88px;
     }
 }
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 960px){
     .hero--form--input{
         max-width: 176px;
     }
-    .hero--form--btn{
-        max-width: 176px;
-    }
 }
-@media only screen and (max-width: 875px){
-    .hero--form--btn{
-        max-width: 88px;
+@media only screen and (max-width: 767px){
+    .hero--img--bg{
+        bottom: 70px;
     }
-
-}
-@media only screen and (max-width: 768px){
     .hero{
+        background-image: url('../../img/page/main/main-hero-bg-tb.png');
         padding: 70px 0 350px 0;
         background-size: cover;
     }
     .hero--form--title{
         font-size: 20px;
     }
-}
-@media only screen and (max-width: 750px){
     .hero--form{
         flex-direction: column;
         flex-wrap: nowrap;
@@ -154,8 +156,12 @@
     }
 }
 @media only screen and (max-width: 480px){
+    .hero--img--bg{
+        bottom: 50px;
+    }
     .hero{
         padding: 40px 0 234px 0;
+        background-image: url('../../img/page/main/main-hero-bg-sm.png');
     }
     .hero--text,.hero--form--title{
         margin-bottom: 24px;
@@ -168,5 +174,6 @@
 @media only screen and (max-width: 360px){
     .hero{
         padding: 40px 0 150px 0;
+        background-image: url('../../img/page/main/main-hero-bg-smmin.png');
     }
 }

@@ -8,8 +8,8 @@ document.addEventListener(`DOMContentLoaded`, () =>{
     try {
         headerLocation();
         mobNav();
-        // slider();
-        // accardion();
+        slider();
+        accardion();
     }
     catch (error) {
         console.log('The error found here is', error)

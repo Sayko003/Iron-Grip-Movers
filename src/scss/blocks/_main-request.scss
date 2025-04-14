@@ -1,6 +1,6 @@
 .request {
     padding: 130px 0;
-    background: url('../../img/page/main/main-request.png') center center /cover no-repeat;
+    background: url('../../img/page/main/main-request-bg-xl.png') center center /cover no-repeat;
 }
 
 .request--block {
@@ -16,4 +16,77 @@
     color: var(--secondary-gray);
 }
 
+@media only screen and (max-width: 1400px){
+    .request {
+        padding: 130px 0;
+        background: url('../../img/page/main/main-request-bg-md.png') center center /cover no-repeat;
+    }
+    .request .h2{
+        max-width: 257px;
+    }
+    .request--text{
+        max-width: 392px;
+    }
+}
+
+@media only screen and (max-width: 1010px){
+    .request {
+        padding: 130px 0;
+        background: url('../../img/page/main/main-request-bg-tb.png') center center /cover no-repeat;
+    }
+    .request .h2{
+        max-width: 220px;
+    }
+    .request--text{
+        max-width: 307px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .request--block{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 24px;
+    }
+    .request .h2{
+        max-width: 100%;
+    }
+    .request--text{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .request {
+        background: url('../../img/page/main/main-request-bg-tbmin.png') center center /cover no-repeat;
+    }
+    .request--block{
+        max-width: 410px;
+        margin: 0 auto;
+    }
+    .request--text{
+        font-size: 17px;
+    }
+    .request--btn{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .request {
+        padding: 70px 0;
+        background: url('../../img/page/main/main-request-bg-sm.png') center center /cover no-repeat;
+    }
+    .request--block{
+        padding: 32px 24px;
+    }
+    .request--text{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .request {
+        background: url('../../img/page/main/main-request-bg-smmin.png') center center /cover no-repeat;
+    }
+}
 

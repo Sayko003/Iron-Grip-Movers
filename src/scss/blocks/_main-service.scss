@@ -1,30 +1,17 @@
 .service {
-    padding: 130px 0 125px 0;
-    background: url('../../img/page/main/main-service-bg.png') center center /cover no-repeat;
-    position: relative;
-    overflow: hidden;
-    &::before{
-        content: url('../../img/page/main/main-service-before.png');
-        width: 100%;
-        min-height: 100%;
-        position: absolute;
-        top:0;
-        left:0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }
+    padding: 130px 0;
+    background: url('../../img/page/main/main-service-bg-xl.png') center center /cover no-repeat;
 }
 .service--cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 20px;
+    justify-content: space-between;
 }
 .service--card {
     max-width: 268px;
 }
-
 .service--title {
     margin-bottom: 4px;
     min-height: 56px;
@@ -43,16 +30,18 @@
     background: var(--primary-white);
 
     position: relative;
-    &::before{
-        content: url('../../img/page/main/main-service-img.png');
-        max-width: 908px;
-        height: 256px;
-        width: 100%;
-        position: absolute;
-        bottom: 32px;
-        right: 32px;;
-    }
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+.service--select--img{
+    max-width: 908px;
+    max-height: 256px;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;;
+    z-index: 2;
 }
 .service--select--location {
     border: 1px solid var(--outline-gray);
@@ -104,6 +93,163 @@
 .service--location-link-active{
     font-weight: 600;
     color: var(--secondary-green);
+}
+
+@media only screen and (max-width: 1450px){
+    .service{
+        background: url('../../img/page/main/main-service-bg-md.png') center center /cover no-repeat;
+    }
+    .service--select--img{
+        max-width: 772px;
+        position: absolute;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .service--select--img{
+        max-width: 486px;
+        max-height: 161px;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .service--cards{
+        justify-content: start;
+    }
+}
+@media only screen and (max-width: 1010px){
+    .service{
+        background: url('../../img/page/main/main-service-bg-mdmin.png') center center /cover no-repeat;
+    }
+    .service--cards{
+        column-gap:0;
+        justify-content: space-between;
+    }
+    .service--card{
+        &:nth-child(-n+3){
+            max-width: 32%;
+            width: 32%;
+            .service--descr{
+                min-height: 214px;
+            }
+        }
+        &:nth-child(4){
+            max-width: 49%;
+            width: 49%;
+            .service--descr{
+                min-height: 0;
+            }
+        }
+        &:nth-child(5){
+            max-width: 49%;
+            width: 49%;
+            .service--descr{
+                min-height: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .service{
+        background: url('../../img/page/main/main-service-bg-table.png') center center /cover no-repeat;
+    }
+    .service--title{
+        min-height: 0;
+    }
+    .service--descr{
+        margin-bottom: 14px;
+    }
+    .service--select{
+        justify-content: flex-start;
+        column-gap: 22px;
+    }
+    .service--select--img{
+        max-width: 342px;
+    }
+    .service--select--location{
+        max-width: 300px;
+    }
+    .service--card{
+        &:nth-child(-n+4){
+            max-width: 354px;
+            width: 100%;
+            .service--descr{
+                min-height: 238px;
+            }
+        }
+        &:nth-child(5){
+            max-width: 354px;
+            width: 100%;
+            .service--descr{
+                min-height: 144px;
+            }
+        }
+    }
+    .service--card:nth-child(-n+4){
+        max-width: 48%;
+    }
+    .service--card:nth-child(5){
+        max-width: 100%;
+        .service--title{
+            min-height: 0;
+        }
+        .service--descr{
+            min-height: 0;
+        }
+    }
+    .service--title{
+        min-height: 56px;
+    }
+    .service--select{
+        margin-top: 24px;
+        padding: 24px;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .service{
+        padding: 70px 0;
+        background: url('../../img/page/main/main-service-bg-sm.png') center center /cover no-repeat;
+    }
+    .service .h2{
+        margin-bottom: 24px;
+    }
+    .service--card:nth-child(-n+4) .service--descr{
+        min-height: 0;
+    }
+    .service--card:not(:last-child){
+        min-height: 311px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .service--select--location{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .service--card:nth-child(-n+5){
+        max-width: 100%;
+    }
+    .service--title{
+        min-height: 0;
+    }
+    .service--card .service--descr {
+        min-height: 0 !important;
+    }
+    .service--card:not(:last-child){
+        min-height: 0;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .service{
+        background: url('../../img/page/main/main-service-bg-smmin.png') center center /cover no-repeat;
+    }
 }
 
 

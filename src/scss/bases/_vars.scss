@@ -5,7 +5,7 @@
 	--font-main: "Montserrat", sans-serif;
 	--font-accent: "Brygada 1918", sans-serif;
 	--font-titles: var(--font-main);
-
+	
 	--primary-black: #13201e;
 	--primary-pink: #d34f82;
 	--primary-white: #fffdfe;
@@ -30,16 +30,33 @@
 @media only screen and (max-width: 1246px){
 	:root{
 		--container-width: 1040px;
-	    --container-padding: 15px;
+	    --container-padding: 20px;
 	}
 }
-@media only screen and (max-width: 1010px){
+@media only screen and (max-width: 1040px){
+	:root{
+        --container-width: 960px;
+	    --container-padding: 20px;
+    }
+}
+@media only screen and (max-width: 959px){
+	:root{
+        --container-width: 768px;
+	    --container-padding: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+	:root{
+        --container-width: 480px;
+	    --container-padding: 20px;
+    }
+}
+@media only screen and (max-width: 480px){
 	:root{
         --container-width: 100%;
 	    --container-padding: 20px;
     }
 }
-
 @media only screen and (max-width: 360px){
 	:root{
         --container-width: 100%;
