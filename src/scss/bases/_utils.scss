@@ -38,4 +38,7 @@
 .flex-center {
 	justify-content: center;
 }
-
+//Яндекс браузер добавляет pop up в конец документа... кринж.
+#tr-popup{
+	display: none;
+}

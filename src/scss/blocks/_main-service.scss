@@ -104,6 +104,12 @@
         position: absolute;
         z-index: 2;
     }
+    .service--card{
+        max-width: 227px;
+    }
+    .service--descr{
+        min-height: 216px;
+    }
 }
 @media only screen and (max-width: 1250px){
     .service--select--img{
@@ -175,7 +181,7 @@
             max-width: 354px;
             width: 100%;
             .service--descr{
-                min-height: 238px;
+                min-height: 144px;
             }
         }
         &:nth-child(5){

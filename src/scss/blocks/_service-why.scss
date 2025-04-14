@@ -1,6 +1,6 @@
 .why {
     padding: 130px 0;
-    background: url('../../img/page/service/service-why-bg.png') center center /cover no-repeat;
+    background: url('../../img/page/service/service-why-xl.png') center center /cover no-repeat;
 }
 .why--title {
     max-width: 580px;
@@ -21,6 +21,7 @@
     padding-left: 15px;
     max-width: 445px;
     position: relative;
+    font-size: 17px;
     &::before{
         content: '';
         position: absolute;
@@ -34,4 +35,66 @@
 }
 .why--descr{
     max-width: 997px;
+}
+
+@media only screen and (max-width: 1400px){
+    .why {
+        background: url('../../img/page/service/service-why-md.png') center center /cover no-repeat;
+    }
+    .why--descr{
+        max-width: 832px;
+    }
+}
+
+@media only screen and (max-width: 1010px){
+    .why {
+        background: url('../../img/page/service/service-why-tb.png') center center /cover no-repeat;
+    }
+    .why--title{
+        max-width: 100%;
+    }
+    .why--descr{
+        max-width: 840px;
+    }
+    .why--list{
+        max-width: 265px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .why {
+        padding: 140px 0;
+        background: url('../../img/page/service/service-why-tbmin.png') center center /cover no-repeat;
+    }
+    .why--wrapper{
+        flex-direction: column;
+        row-gap: 4px;
+    }
+    .why--list{
+        max-width: 100%;
+        row-gap: 4px;
+    }
+    .why--item{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .why {
+        padding: 85px 0;
+        background: url('../../img/page/service/service-why-sm.png') center center /cover no-repeat;
+    }
+    .why .h2{
+        margin-bottom: 24px;
+    }
+    .why--title{
+        max-width: 395px;
+    }
+    .why--item, .why--descr{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .why {
+        background: url('../../img/page/service/service-why-smmin.png') center center /cover no-repeat;
+    }
 }

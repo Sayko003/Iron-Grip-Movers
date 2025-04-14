@@ -16,7 +16,8 @@
     color: var(--primary-black);
 
     margin-bottom: 40px;
-
+    position: relative;
+    z-index: 2;
     .pink{
         color: var(--primary-pink);
     }

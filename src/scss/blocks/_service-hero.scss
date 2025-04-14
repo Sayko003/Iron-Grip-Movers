@@ -1,7 +1,7 @@
 
 .service--hero {
     padding: 125px 0;
-    background-image: url('../img/page/service/service-hero-bg.png');
+    background-image: url('../../img/page/service/service-hero-bg-xl.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,4 +13,66 @@
 }
 .service--hero--img {
     max-width: 490px;
+}
+
+@media only screen and (max-width: 1400px){
+    .service--hero{
+        background-image: url('../../img/page/service/service-hero-bg-md.png');
+    }
+    .service .hero--text{
+        max-width: 642px;
+    }
+    .service--hero--img {
+        max-width: 436px;
+        max-height: 340px;
+    }
+}
+@media only screen and (max-width: 1246px){
+    .hero--text{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 1010px){
+    .service--hero{
+        padding: 70px 0 40px 0;
+        background-image: url('../../img/page/service/service-hero-bg-tb.png');
+    }
+    .service--hero--img{
+        max-width: 364px;
+        max-height: 292px;
+    }
+    .service--hero .text-main{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 767px){
+    .service--hero{
+        padding: 70px 0;
+        background-image: url('../../img/page/service/service-hero-bg-tbmin.png');
+    }
+    .service--hero .text-main{
+        max-width: 100%;
+    }
+    .service--hero--img{
+        max-width: 364px;
+        max-height: 292px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .service--hero{
+        padding: 40px 0 50px 0;
+        background-image: url('../../img/page/service/service-hero-bg-sm.png');
+    }
+    
+}
+
+@media only screen and (max-width: 360px){
+    .service--hero{
+        padding: 40px 0;
+        background-image: url('../../img/page/service/service-hero-bg-smmin.png');
+    }
+    .service--hero--img {
+        max-width: 275px;
+    }
 }
