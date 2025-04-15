@@ -6,22 +6,26 @@
                 <p class="text-main hero--text-descr">We offer complete support, from packing to safe delivery, ensuring that every step of the process is taken care of the process</p>
             </div>
 
-            <form class="hero--form">
+            <form action="" class="hero--form" method="POST" id="form">
                 <div class="hero--form--title">Get a quote online</div>
                 <div class="hero--form--inputs">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="from_name" value="Iron Grip Movers">
+                    <input type="hidden" name="subject" value="Application from the site Iron Grip Movers">
+                    <input type="hidden" name="access_key" value="fa08887c-1177-4134-b1f3-9f8a213aa97f">
                     <div class="hero--form--block">
                         <label for="date" class="hero--form--label hero--form--date">Move Date</label>
                         <svg class="icon-input">
                             <use href="./img/svgsprite/sprite.symbol.svg#input-calendar"></use>
                         </svg>
-                        <input type="text" name="date" id="date" class="hero--form--input" placeholder="Move date" minlength="1" required>
+                        <input type="text" name="date" id="date" class="hero--form--input" placeholder="Move date" minlength="1" required autocomplete="off" data-language='en' value="">
                     </div>
                     <div class="hero--form--block hero--form--from">
                         <label for="from" class="hero--form--label">Point out</label>
                         <svg class="icon-input">
                             <use href="./img/svgsprite/sprite.symbol.svg#input-car-right"></use>
                         </svg>
-                        <input type="text" name="from" id="from" class="hero--form--input" placeholder="Point out" minlength="1" required>
+                        <input type="text" name="from" id="from" class="hero--form--input" placeholder="Point out" minlength="2" maxlength="20" required autocomplete="off">
                     </div>
                     
                     <div class="hero--form--block hero--form--to">
@@ -29,11 +33,21 @@
                         <svg class="icon-input">
                             <use href="./img/svgsprite/sprite.symbol.svg#input-car-left"></use>
                         </svg>
-                        <input type="text" name="to" id="to" class="hero--form--input" placeholder="To zip" minlength="1" required>
+                        <input type="text" name="to" id="to" class="hero--form--input" placeholder="To zip" minlength="2" maxlength="20" required autocomplete="off"">
+                    </div>
+
+                    <div class="hero--form--block hero--form--phone">
+                        <label for="tel" class="hero--form--label">Phone</label>
+                        <svg class="icon-input icon-input-tel">
+                            <use href="./img/svgsprite/sprite.symbol.svg#input-tel"></use>
+                        </svg>
+                        <input type="text" name="tel" id="tel" class="hero--form--input" placeholder="+1 000-000-0000" required autocomplete="off" onkeypress="noDigits(event)">
                     </div>
                 </div>
                 <button type="submit" class="main--btn hero--form--btn">Next</button>
+                <div id="result"></div>
             </form>
+            
         </div>
         <div class="hero--img--bg">
             <img src="../../img/page/main/main-hero-cars.png" alt="Cars" loading="lazy">

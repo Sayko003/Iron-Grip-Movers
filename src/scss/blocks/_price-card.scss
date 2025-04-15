@@ -1,0 +1,110 @@
+.price--card {
+    padding-top: 70px;
+}
+
+.price--card--wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.price--card--block {
+    max-width: 364px;
+    width: 100%;
+    padding: 32px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 24px;
+    background: var(--price-card);
+}
+.price--card--img {
+    max-width: 200px;
+    min-height: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto 4px auto;
+    margin-bottom: 4px;
+}
+.price--card .h2 {
+    text-align: center;
+}
+.price--card .h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.price--card .price--card--price{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.price--card--list {
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.price--card--item {
+    padding-left: 15px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top:7px;
+        left:0;
+        border-radius: 50px;
+        width: 7px;
+        height: 7px;
+        background-color: var(--secondary-green);
+    }
+}
+.price--card .main--btn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1400px){
+    .price--card--wrapper{
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 1246px){
+    .price--card--block {
+        max-width: 310px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .price--card--block {
+        max-width: 290px;
+    }
+}
+
+@media only screen and (max-width: 959px){
+    .price--card--block {
+        max-width: 340px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .price--card{
+        padding-top: 40px;
+    }
+    .price--card--block {
+        max-width: 364px;
+    }
+    .price--card--wrapper{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 480px){
+    .price--card--block {
+        max-width: 100%;
+    }
+}
+
+// @media only screen and (max-width: 360px){
+
+// }

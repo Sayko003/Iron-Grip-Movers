@@ -25,6 +25,8 @@
 
     width: 100%;
     max-width: 392px;
+    position: relative;
+    z-index: 4;
 }
 .hero--form--title {
     font-family: var(--font-family);

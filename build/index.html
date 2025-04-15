@@ -19,7 +19,7 @@
 					<nav class="header--nav">
 						<ul class="header--list">
 							<li class="header--item"><a href="service.html" class="nav--link">Services</a></li>
-							<li class="header--item"><a href="#" class="nav--link">Price</a></li>
+							<li class="header--item"><a href="price.html" class="nav--link">Price</a></li>
 							<li class="header--item header--location">
 								<a href="#" class="nav--link header--link-location header-btn--location">
 									Select Location
@@ -33,12 +33,12 @@
 								</div>
 							</li>
 							<li class="header--item"><a href="#" class="nav--link">Blog</a></li>
-							<li class="header--item"><a href="#" class="nav--link">Contacts</a></li>
+							<li class="header--item"><a href="contact.html" class="nav--link">Contacts</a></li>
 						</ul>
 					</nav>
 
 					<div class="header--mob--wrapper">
-						<a href="#" class="main--btn">Contact us</a>
+						<a href="tel:+16177787812" class="main--btn">Contact us</a>
 						<div class="header--burger">
 							<svg class="icon--header-nav">
 								<use href="./img/svgsprite/sprite.symbol.svg#header-nav"></use>
@@ -105,22 +105,47 @@
 							</p>
 						</div>
 
-						<form class="hero--form">
+						<form action="" class="hero--form" method="POST" id="form">
 							<div class="hero--form--title">Get a&#160;quote online</div>
 							<div class="hero--form--inputs">
+								<input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+								<input type="hidden" name="from_name" value="Iron Grip Movers" />
+								<input type="hidden" name="subject" value="Application from the site Iron Grip Movers" />
+								<input type="hidden" name="access_key" value="fa08887c-1177-4134-b1f3-9f8a213aa97f" />
 								<div class="hero--form--block">
 									<label for="date" class="hero--form--label hero--form--date">Move Date</label>
 									<svg class="icon-input">
 										<use href="./img/svgsprite/sprite.symbol.svg#input-calendar"></use>
 									</svg>
-									<input type="text" name="date" id="date" class="hero--form--input" placeholder="Move date" minlength="1" required />
+									<input
+										type="text"
+										name="date"
+										id="date"
+										class="hero--form--input"
+										placeholder="Move date"
+										minlength="1"
+										required
+										autocomplete="off"
+										data-language="en"
+										value=""
+									/>
 								</div>
 								<div class="hero--form--block hero--form--from">
 									<label for="from" class="hero--form--label">Point out</label>
 									<svg class="icon-input">
 										<use href="./img/svgsprite/sprite.symbol.svg#input-car-right"></use>
 									</svg>
-									<input type="text" name="from" id="from" class="hero--form--input" placeholder="Point out" minlength="1" required />
+									<input
+										type="text"
+										name="from"
+										id="from"
+										class="hero--form--input"
+										placeholder="Point out"
+										minlength="2"
+										maxlength="20"
+										required
+										autocomplete="off"
+									/>
 								</div>
 
 								<div class="hero--form--block hero--form--to">
@@ -128,10 +153,28 @@
 									<svg class="icon-input">
 										<use href="./img/svgsprite/sprite.symbol.svg#input-car-left"></use>
 									</svg>
-									<input type="text" name="to" id="to" class="hero--form--input" placeholder="To zip" minlength="1" required />
+									<input type="text" name="to" id="to" class="hero--form--input" placeholder="To zip" minlength="2" maxlength="20" required autocomplete="off"">
+								</div>
+
+								<div class="hero--form--block hero--form--phone">
+									<label for="tel" class="hero--form--label">Phone</label>
+									<svg class="icon-input icon-input-tel">
+										<use href="./img/svgsprite/sprite.symbol.svg#input-tel"></use>
+									</svg>
+									<input
+										type="text"
+										name="tel"
+										id="tel"
+										class="hero--form--input"
+										placeholder="+1 000-000-0000"
+										required
+										autocomplete="off"
+										onkeypress="noDigits(event)"
+									/>
 								</div>
 							</div>
 							<button type="submit" class="main--btn hero--form--btn">Next</button>
+							<div id="result"></div>
 						</form>
 					</div>
 					<div class="hero--img--bg">

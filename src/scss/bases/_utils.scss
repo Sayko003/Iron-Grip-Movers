@@ -38,7 +38,14 @@
 .flex-center {
 	justify-content: center;
 }
+.crossed{
+	text-decoration: line-through;
+}
+
 //Яндекс браузер добавляет pop up в конец документа... кринж.
 #tr-popup{
-	display: none;
+	display: none !important;
+	opacity: 0 !important;
+	width: 0 !important;
+	height: 0 !important;
 }

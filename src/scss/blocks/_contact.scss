@@ -1,0 +1,81 @@
+.contact {
+    padding: 40px 0 70px 0;
+    
+}
+.contact .h2{
+    margin-bottom: 24px;
+    text-align: center;
+    color: var(--secondary-green);
+}
+.contact--blocks {
+    display: flex;
+    flex-direction: row;
+    row-gap: 24px;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact--block{
+    max-width: 370px;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 32px;
+    border-radius: 25px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    background: var(--price-card);
+}
+.contact .h3 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+.contact--tel--wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.contact .text-main {
+    font-size: 20px;
+}
+.contact--link{
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--secondary-green);
+        text-shadow: 0 0 0.6px var(--secondary-green), 0 0 0.6px var(--secondary-green);
+    }
+}
+@media only screen and (max-width: 1010px){
+    
+    .contact--block{
+        max-width: 340px;
+        padding: 24px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .contact{
+        padding: 40px 0;
+    }
+    .contact .h2{
+        text-align: left;
+    }
+    .contact--blocks{
+        flex-wrap: wrap;
+        
+    }
+    .contact--block{
+        padding: 32px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .contact .h3{
+        font-size: 20px;
+    }
+    .contact .text-main{
+        font-size: 15px;
+    }
+}
+
+// @media only screen and (max-width: 360px){
+
+// }

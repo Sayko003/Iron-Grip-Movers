@@ -1,0 +1,68 @@
+<section class="hero">
+	<div class="container">
+		<div class="hero--wrapper">
+			<div class="hero--text">
+				<h1 class="h1"><span class="title-color">IRON GRIP MOVERS</span>&#160;&#8212; YOUR TRUSTED PARTNER IN&#160;MOVING</h1>
+				<p class="text-main hero--text-descr">
+					We&#160;offer complete support, from packing to&#160;safe delivery, ensuring&#160;that&#160;every step of&#160;the process is&#160;taken care of&#160;the process
+				</p>
+			</div>
+
+			<form action="" class="hero--form" method="POST" id="form">
+				<div class="hero--form--title">Get a&#160;quote online</div>
+				<div class="hero--form--inputs">
+					<input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+					<input type="hidden" name="from_name" value="Iron Grip Movers" />
+					<input type="hidden" name="subject" value="Application from the site Iron Grip Movers" />
+					<input type="hidden" name="access_key" value="fa08887c-1177-4134-b1f3-9f8a213aa97f" />
+					<div class="hero--form--block">
+						<label for="date" class="hero--form--label hero--form--date">Move Date</label>
+						<svg class="icon-input">
+							<use href="./img/svgsprite/sprite.symbol.svg#input-calendar"></use>
+						</svg>
+						<input
+							type="text"
+							name="date"
+							id="date"
+							class="hero--form--input"
+							placeholder="Move date"
+							minlength="1"
+							required
+							autocomplete="off"
+							data-language="en"
+							value=""
+						/>
+					</div>
+					<div class="hero--form--block hero--form--from">
+						<label for="from" class="hero--form--label">Point out</label>
+						<svg class="icon-input">
+							<use href="./img/svgsprite/sprite.symbol.svg#input-car-right"></use>
+						</svg>
+						<input type="text" name="from" id="from" class="hero--form--input" placeholder="Point out" minlength="2" maxlength="20" required autocomplete="off" />
+					</div>
+
+					<div class="hero--form--block hero--form--to">
+						<label for="to" class="hero--form--label">To&#160;zip</label>
+						<svg class="icon-input">
+							<use href="./img/svgsprite/sprite.symbol.svg#input-car-left"></use>
+						</svg>
+						<input type="text" name="to" id="to" class="hero--form--input" placeholder="To zip" minlength="2" maxlength="20" required autocomplete="off"">
+					</div>
+
+					<div class="hero--form--block hero--form--phone">
+						<label for="tel" class="hero--form--label">Phone</label>
+						<svg class="icon-input icon-input-tel">
+							<use href="./img/svgsprite/sprite.symbol.svg#input-tel"></use>
+						</svg>
+						<input type="text" name="tel" id="tel" class="hero--form--input" placeholder="+1 000-000-0000" required autocomplete="off" onkeypress="noDigits(event)" />
+					</div>
+				</div>
+				<button type="submit" class="main--btn hero--form--btn">Next</button>
+				<div id="result"></div>
+			</form>
+		</div>
+		<div class="hero--img--bg">
+			<img src="./img/page/main/main-hero-cars.png" alt="Cars" loading="lazy" />
+		</div>
+	</div>
+</section>
