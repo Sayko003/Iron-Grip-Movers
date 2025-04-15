@@ -1,0 +1,9 @@
+.politic{
+    padding: 40px;
+}
+.politic .h1{
+    color: var(--secondary-green);
+}
+.politic .text-main:not(:last-child){
+    margin-bottom: 14px;
+}

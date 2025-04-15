@@ -1,0 +1,78 @@
+.blogs {
+    padding: 70px 0;
+}
+.blogs--wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap:20px;
+}
+.blogs--block {
+    padding: 32px;
+    max-width: 364px;
+    width: 100%;
+    padding: 32px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 24px;
+    background: var(--price-card);
+}
+.blogs--img {
+    max-width: 100%;
+    max-height: auto;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+.blogs--title {
+    margin-bottom: 4px;
+}
+.blogs--date {
+    color: var(--secondary-gray);
+    margin-bottom: 4px;
+}
+.blogs--descr {
+    margin-bottom: 4px;
+}
+.blogs--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blogs--read {
+    color: var(--primary-pink);
+    font-weight: 800;
+}
+.transparent--btn {
+}
+.blogs--btn {
+    max-width: 150px;
+}
+
+
+@media only screen and (max-width: 1246px){
+    .blogs--wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 959px){
+    .blogs--wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 730px){
+    .blogs--wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs--block{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .blogs--block{
+        padding: 24px;
+    }
+}

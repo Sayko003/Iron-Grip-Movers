@@ -1,0 +1,24 @@
+.article {
+    padding: 70px 0;
+}
+.article--list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.article .article--title {
+    margin-bottom: 4px;
+}
+@media only screen and (max-width: 767px){
+    .article{
+        padding: 40px 0;
+    }
+}
+// @media only screen and (max-width: 480px){
+
+// }
+
+// @media only screen and (max-width: 360px){
+
+// }
